@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace TodoList.Application.DTOs;
 
-namespace TodoList.Application.Entities
+public record UserDto
 {
-    internal class Class1
-    {
-    }
+    public int Id { get; init; }
+    public string Email { get; init; } = string.Empty;
+    public string Username { get; init; } = string.Empty;
 }
