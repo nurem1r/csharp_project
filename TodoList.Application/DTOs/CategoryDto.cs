@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace TodoList.Application.DTOs;
 
-namespace TodoList.Application.Entities
+public record CategoryDto
 {
-    internal class Class1
-    {
-    }
+    public int Id { get; init; }
+    public string Name { get; init; } = string.Empty;
+    public string Color { get; init; } = string.Empty;
 }
