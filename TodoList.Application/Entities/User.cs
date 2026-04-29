@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace TodoList.Application.Entities;
 
-namespace TodoList.Application.Entities
+public class User
 {
-    internal class Class1
-    {
-    }
+    public int Id { get; set; }
+    public string Email { get; set; } = string.Empty;
+    public string Username { get; set; } = string.Empty;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+    public ICollection<TodoItem> TodoItems { get; set; } = new List<TodoItem>();
 }
