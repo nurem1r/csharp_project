@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace TodoList.Application.Entities;
 
-namespace TodoList.Application.Entities
+public class Tag
 {
-    internal class Class1
-    {
-    }
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+
+    public ICollection<TodoItem> TodoItems { get; set; } = new List<TodoItem>();
 }
