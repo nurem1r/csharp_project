@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace TodoList.Application.DTOs;
 
-namespace TodoList.Application.Entities
+public record CreateTodoItemDto
 {
-    internal class Class1
-    {
-    }
+    public string Title { get; init; } = string.Empty;
+    public string Description { get; init; } = string.Empty;
+    public int Priority { get; init; } = 1;
+    public DateTime DueDate { get; init; }
+    public int? CategoryId { get; init; }
+    public List<int> TagIds { get; init; } = new();
 }
