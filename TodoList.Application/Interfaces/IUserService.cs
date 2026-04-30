@@ -2,11 +2,8 @@
 
 namespace TodoList.Application.Interfaces;
 
-public interface ICategoryService
+public interface IUserService
 {
-    Task<List<CategoryDto>> GetAllAsync();
-    Task<CategoryDto?> GetByIdAsync(int id);
-    Task<CategoryDto> CreateAsync(string name, string color);
-    Task<CategoryDto?> UpdateAsync(int id, string name, string color);
-    Task<bool> DeleteAsync(int id);
+    Task<UserDto?> GetByIdAsync(int id);
+    Task<UserDto> CreateAsync(string email, string username);
 }
