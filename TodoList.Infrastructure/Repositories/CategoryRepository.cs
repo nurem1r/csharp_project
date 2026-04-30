@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TodoList.Application.Entities;
+using TodoList.Infrastructure.Entities;
 using TodoList.Infrastructure.Data;
 
 namespace TodoList.Infrastructure.Repositories;

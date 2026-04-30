@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
-using TodoList.Application.Entities;
+using TodoList.Infrastructure.Entities;
 
 namespace TodoList.Infrastructure.Data;
 
